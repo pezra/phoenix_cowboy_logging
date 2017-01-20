@@ -22,7 +22,7 @@ defmodule MyWebApp do
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+This package can be installed as:
 
   1. Add `phoenix_cowboy_logging` to your list of dependencies in `mix.exs`:
 

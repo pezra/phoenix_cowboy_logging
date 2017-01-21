@@ -12,10 +12,10 @@ defmodule MyWebApp do
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
 
-    PhoenixCowboyLogging.enable_for(:ic_web, IcWeb.Endpoint)
+    PhoenixCowboyLogging.enable_for(:my_web_app, __MODULE__.Endpoint)
 
     children = [
-      supervisor(MyWebApp.Endpoint, []),
+      supervisor(__MODULE__.Endpoint, []),
 ...
 ```
 

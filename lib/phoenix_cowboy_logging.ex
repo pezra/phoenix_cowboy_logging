@@ -29,7 +29,7 @@ defmodule PhoenixCowboyLogging do
   Callback that does the logging.
   """
   def onresponse(status_code, _headers, _body, request) do
-    with {url, _} <- :cowboy_req.url(request),
+    with {url, _} <- :cowboy_req.uri(request),
          {method, _} <- :cowboy_req.method(request)
     do
       if probably_cowboy_error?(status_code, request) do

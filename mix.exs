@@ -4,7 +4,7 @@ defmodule PhoenixCowboyLogging.Mixfile do
   def project do
     [app: :phoenix_cowboy_logging,
      description: "Pry some information from cowboy when it fails to parse requests.",
-     version: "1.0.0",
+     version: "2.0.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -17,8 +17,8 @@ defmodule PhoenixCowboyLogging.Mixfile do
   end
 
   defp deps do
-    [{:cowboy, "~> 1.0"},
-     {:ex_doc, ">= 0.0.0", only: :dev}]
+    [{:cowboy, "~> 2.7"},
+     {:ex_doc, "~> 0.21.3", only: :dev}]
   end
 
   defp package do

@@ -28,7 +28,7 @@ This package can be installed as:
 
     ```elixir
     def deps do
-      [{:phoenix_cowboy_logging, "~> 1.0"}]
+      [{:phoenix_cowboy_logging, "~> 2.0"}]
     end
     ```
 
